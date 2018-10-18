@@ -1,0 +1,15 @@
+//
+//  PoppingPCHHead.pch
+//  AnimationTrying
+//
+//  Created by JiangXuanke on 2018/10/18.
+//  Copyright © 2018 JiangXuanke. All rights reserved.
+//
+
+#ifndef PoppingPCHHead_pch
+#define PoppingPCHHead_pch
+#include <Masonry/Masonry.h>
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PoppingPCHHead_pch */
