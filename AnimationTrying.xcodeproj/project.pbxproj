@@ -127,8 +127,8 @@
 		99C5B29A217C9A9E000093EF /* CircleAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				99C5B298217C92AC000093EF /* CircleViewController.m */,
 				99C5B297217C92AC000093EF /* CircleViewController.h */,
+				99C5B298217C92AC000093EF /* CircleViewController.m */,
 				99C5B29B217C9AB4000093EF /* CircleView.h */,
 				99C5B29C217C9AB4000093EF /* CircleView.m */,
 				99B52499218FE4E800D2BC76 /* CircleViewAutoViewController.h */,

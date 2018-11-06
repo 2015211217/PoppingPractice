@@ -40,7 +40,7 @@
 }
 
 #pragma mark - stroke related
-- (void)setStrokeEnd:(CGFloat)strokeEnd animated:(BOOL) animated {
+- (void)setStrokeEnd:(CGFloat)strokeEnd animated:(BOOL)animated {
     if (animated) {
         [self animateToStrokeEnd:strokeEnd];
         return;
@@ -50,8 +50,9 @@
 
 - (void)animateToStrokeEnd:(CGFloat)strokeEnd {
     POPSpringAnimation *strokeAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPShapeLayerStrokeEnd];
+    strokeAnimation.fromValue = @(0.0f);
     strokeAnimation.toValue = @(strokeEnd);
-    strokeAnimation.springBounciness = 2.0f;
+    strokeAnimation.springBounciness = 1.0f;
     strokeAnimation.removedOnCompletion = NO;
     [self.circleLayer pop_addAnimation:strokeAnimation forKey:@"layerStrokeAnimation"];
 }

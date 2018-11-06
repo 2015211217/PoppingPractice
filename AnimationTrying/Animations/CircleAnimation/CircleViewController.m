@@ -51,9 +51,8 @@
      forControlEvents:UIControlEventValueChanged];
     // 将两个动画关联起来
     // 这两段完全看不懂呢hhhhhhh
+    // This could be heaven or this could be hell.
     NSDictionary *views = NSDictionaryOfVariableBindings(slider, _circleView);
-//    [self.view addConstraint:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[self.circleView] - (40) - [slider]" options:0 metrics:nil views:views]];
-//    [self.view addConstraint:[NSLayoutConstraint constraintsWithVisualFormat:@"H: |-[slider]-|" options:0 metrics:nil views:views]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_circleView]-(40)-[slider]"
                                                                       options:0
                                                                       metrics:nil
@@ -63,8 +62,6 @@
                                                                       options:0
                                                                       metrics:nil
                                                                         views:views]];
-    
-    
     [self.circleView setStrokeEnd:slider.value animated:NO];
 }
 
