@@ -30,7 +30,7 @@
         make.top.equalTo(self.view.mas_top).offset(200);
         make.centerX.equalTo(self.view.mas_left).offset(self.view.frame.size.width / 2 - 100.0f);
     }];
-    //  感觉似乎circle的位置在circleView里面的位置有一点点不对呀
+    
     UIButton *startBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:startBtn];
     [startBtn mas_makeConstraints:^(MASConstraintMaker *make) {

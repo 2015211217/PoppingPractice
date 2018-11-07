@@ -13,8 +13,9 @@
 #import <pop/POP.h>
 #import <pop/POPAnimatableProperty.h>
 #import "CircleViewAutoViewController.h"
-//  我觉得可以顺便看一下tableView的使用
-@interface ViewController ()
+#import "MovingViewController.h"
+
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource> //如果不添加的话后面的调用会有报警，但是能够正常运行
 
 @property (nonatomic, strong) NSArray *tableViewItems;
 @property (nonatomic, strong) UITableView *tableView;
@@ -52,6 +53,8 @@ static NSString * const kCellIdentifier = @"cellIdentifier";
     self.tableViewItems = @[@[@"Circle Animation", [CircleViewController class]],
                             @[@"Circle Animation(auto)", [CircleViewAutoViewController class]],
                             @[@"Reveal Animation", [RevealViewController class]],
+                            @[@"Moving Animation", [MovingViewController class]],
+                
                             ];
     [self.tableView registerClass:[MenuTableViewCell class] forCellReuseIdentifier:kCellIdentifier];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];

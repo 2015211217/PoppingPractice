@@ -15,6 +15,7 @@
 		99599FA12176FF01001FFE03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99599FA02176FF01001FFE03 /* main.m */; };
 		99599FAC21782BA3001FFE03 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99599FAB21782BA3001FFE03 /* MenuTableViewCell.m */; };
 		99B5249B218FE4E800D2BC76 /* CircleViewAutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B5249A218FE4E800D2BC76 /* CircleViewAutoViewController.m */; };
+		99B5249F2191862600D2BC76 /* MovingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B5249E2191862600D2BC76 /* MovingViewController.m */; };
 		99C5B299217C92AC000093EF /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C5B298217C92AC000093EF /* CircleViewController.m */; };
 		99C5B29D217C9AB4000093EF /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C5B29C217C9AB4000093EF /* CircleView.m */; };
 		99C5B2A621803E4C000093EF /* RevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C5B2A521803E4C000093EF /* RevealViewController.m */; };
@@ -40,6 +41,8 @@
 		99599FAB21782BA3001FFE03 /* MenuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
 		99B52499218FE4E800D2BC76 /* CircleViewAutoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleViewAutoViewController.h; sourceTree = "<group>"; };
 		99B5249A218FE4E800D2BC76 /* CircleViewAutoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleViewAutoViewController.m; sourceTree = "<group>"; };
+		99B5249D2191862600D2BC76 /* MovingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovingViewController.h; sourceTree = "<group>"; };
+		99B5249E2191862600D2BC76 /* MovingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovingViewController.m; sourceTree = "<group>"; };
 		99C5B297217C92AC000093EF /* CircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
 		99C5B298217C92AC000093EF /* CircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
 		99C5B29B217C9AB4000093EF /* CircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
@@ -115,9 +118,27 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		99B5249C219185DD00D2BC76 /* MovingAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				99B5249D2191862600D2BC76 /* MovingViewController.h */,
+				99B5249E2191862600D2BC76 /* MovingViewController.m */,
+			);
+			path = MovingAnimation;
+			sourceTree = "<group>";
+		};
+		99B524A02191865400D2BC76 /* FoldingAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FoldingAnimation;
+			sourceTree = "<group>";
+		};
 		99C5B296217C9299000093EF /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				99B5249C219185DD00D2BC76 /* MovingAnimation */,
+				99B524A02191865400D2BC76 /* FoldingAnimation */,
 				99C5B2A321803E10000093EF /* RevealAnimation */,
 				99C5B29A217C9A9E000093EF /* CircleAnimation */,
 			);
@@ -258,6 +279,7 @@
 				99C5B2A621803E4C000093EF /* RevealViewController.m in Sources */,
 				99B5249B218FE4E800D2BC76 /* CircleViewAutoViewController.m in Sources */,
 				990038E82181BBA1008863CE /* AppDelegate.m in Sources */,
+				99B5249F2191862600D2BC76 /* MovingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
